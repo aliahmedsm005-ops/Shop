@@ -10,11 +10,10 @@ factory APIHelper()
 }
 APIHelper._internal();
 
-//Declaring Dio
+//Declaring Dio as
 Dio dio = Dio(
   BaseOptions(
     // baseUrl: EndPoints.
   )
 );
 }
-//
