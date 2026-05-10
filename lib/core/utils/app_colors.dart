@@ -4,7 +4,12 @@ static const Color splashTextColors= Color(0xffF83758);
 static const Color homePageTextTitleColors= Color(0xff4392F9) ;
 static const Color textColors= Color(0xff000000);
 static const Color btnTextColors= Color(0xffFFFFFF);
+static const Color btnText2Colors= Color(0xffF83758);
+static const Color btnColors= Color(0xffF83758);
 static const Color backTransitionTextColors= Color(0xffC4C4C4);
 static const Color forwardTransitionTextColors= Color(0xffF83758);
 static const Color hintTextColors= Color(0xff676767);
+static const Color textFormFieldColors= Color(0xffA8A8A9);
+static const Color onSelectedContainerColors= Color(0xffF83758);
+static const Color unSelectedContainerColors= Color(0xffFFCCD5);
 }
