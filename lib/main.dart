@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop/features/onboarding_view/splash.dart';
 
-void main() {
+import 'core/translation/translation_helper.dart';
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  //await CacheHelper.init();
   runApp( ShopApp());
 }
 
@@ -11,15 +16,18 @@ class ShopApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-  return ScreenUtilInit(
-    designSize: const Size(430, 932),
+    //String? lang = CacheHelper.getValue(CacheKeys.lang) as String?;
+    return ScreenUtilInit(
+    designSize: const Size(375, 812),
     builder: (context,child)=>MaterialApp(
+      //translations: TranslationHelper(),
+      //locale: Locale( lang ?? 'en'),
       theme: ThemeData(
       scaffoldBackgroundColor: Color(0xffFDFDFD),
         fontFamily: "Montserrat",
       ),
       debugShowCheckedModeBanner: false,
-     // home: ,
+      home: Splash(),
     ),
   );
   }
